@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <title>行った国マップ</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- ヘッダー -->
+    <header class="header">
+
+      <h1>行った国マップ</h1>
+
+      <div class="stats">
+
+        <div class="stats-text">
+          <span id="visited-count">0</span> / 195 制覇
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+
+        <div class="achievement">
+          達成率
+          <span id="achievement-rate">0%</span>
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- 世界地図 -->
+    <section class="map-section">
+
+      <object
+        id="world-map"
+        type="image/svg+xml"
+        data="world-map.svg">
+      </object>
+
+    </section>
+
+    <!-- 凡例 -->
+    <section class="legend">
+
+      <div class="legend-item">
+        <span
+          class="legend-color"
+          style="background:#E5E7EB">
+        </span>
+        未訪問
+      </div>
+
+      <div class="legend-item">
+        <span
+          class="legend-color"
+          style="background:#86EFAC">
+        </span>
+        訪問
+      </div>
+
+      <div class="legend-item">
+        <span
+          class="legend-color"
+          style="background:#60A5FA">
+        </span>
+        宿泊
+      </div>
+
+      <div class="legend-item">
+        <span
+          class="legend-color"
+          style="background:#F87171">
+        </span>
+        居住
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ポップアップ -->
+  <div id="popup"></div>
+
+  <script src="world.js"></script>
+
+</body>
+</html>
