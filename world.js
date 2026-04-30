@@ -72,13 +72,7 @@ const mapObject = document.getElementById("world-map");
 
 mapObject.addEventListener("load", () => {
 
-  console.log("SVG読み込み成功");
-
-  console.log(applyColors);
-
   const svgDoc = mapObject.contentDocument;
-
-  console.log(svgDoc);
 
   if (!svgDoc) {
     console.log("svgDoc が null");
@@ -231,5 +225,3 @@ function showPopup(
 
   }, 1500);
 }
-
-console.log("world.js 読み込み成功");
