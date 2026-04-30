@@ -99,18 +99,12 @@ mapObject.addEventListener("load", () => {
 
 function applyColors(svgDoc) {
 
-  console.log("applyColors 開始");
-  console.log(countryStatus);
-
   Object.entries(countryStatus).forEach(
     ([countryCode, status]) => {
 
       const group = svgDoc.getElementById(
         countryCode
       );
-
-      console.log(countryCode);
-      console.log(group);
 
       if (!group) {
         console.log(
